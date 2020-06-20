@@ -1,5 +1,5 @@
-//
-//
+// Copyright (C) 2020
+// All rights reserved
 
 package labcodingstandards;
 
@@ -16,13 +16,15 @@ import java.util.Scanner;
  */
 public class Calculator {	
 	
+    /** Method to get the input from the user.
+     * One operator and two numbers. */
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
 		
         System.out.print("1. +\n2. -\n3. *\n4. /\nEnter an operator: ");
         
         char operator = reader.nextLine().charAt(0);
-        double First;
+        double first;
         double second;
         String input;
         
@@ -31,7 +33,7 @@ public class Calculator {
         	input = reader.nextLine();
         	
             try {
-            	First=Integer.parseInt(input);
+            	first=Integer.parseInt(input);
                 break;
             } catch (NumberFormatException e) {
                 System.out.println("Not valid!");
@@ -51,13 +53,14 @@ public class Calculator {
         }
 
         Calculator cal=new Calculator();
-        String result=cal.Operation(First,second,operator);
+        String result=cal.operation(first, second, operator);
 
         System.out.printf(result);
 		reader.close();
 	}
-
-	private String Operation(double first,double second,char operator) {
+    /**
+     * Method to do the operation with the given arguments.*/
+	private String operation(double first, double second, char operator) {
 		double result = 0;
 		switch(operator)
         {
