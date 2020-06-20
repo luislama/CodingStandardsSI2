@@ -7,8 +7,12 @@ import java.util.Scanner;
 
 
 /**
- * @author
+ * @author Jose Escobar, Luis Lama
+ * Created by Jose Escobar and published in
+ * https://github.com/JoseAndresEscobar19/CodingStandardsSI2
  *
+ * Forked and modified by Luis Lama
+ * in https://github.com/luislama/CodingStandardsSI2
  */
 public class Calculator {	
 	
